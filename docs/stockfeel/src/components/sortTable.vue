@@ -70,7 +70,7 @@ export default {
   },
   methods: {
     async initData () {
-      let res = await fetch('../data.json');
+      let res = await fetch('./data.json');
       this.originData = await res.json();
       this.combineData();
       return this.originData;
