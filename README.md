@@ -1,2 +1,2 @@
-# practice
-try to exercise any code
+# 程式練習
+各類前端程式練習
