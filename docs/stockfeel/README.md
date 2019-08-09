@@ -15,6 +15,8 @@
 - [x] HTML 5
 - [x] CSS 3
 
+***
+
 ## Project setup
 ```
 npm install
