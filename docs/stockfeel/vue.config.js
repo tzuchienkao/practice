@@ -1,6 +1,6 @@
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/practice/stockfeel/'
+    ? '/f2e-exam/stockfeel/'
     : '/',
     assetsDir:'static'
 }
