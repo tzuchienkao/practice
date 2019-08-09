@@ -8,17 +8,13 @@
 > 
 > 讓微不足矣獨立成為 repo 的專案，都能在同個 repo 中顯示不同 page！
 
-## 
 **前端考試題目**
-
 2019-08更新
 
 ## 股感 (stockfeel) 前端面試上機測驗
 https://tzuchienkao.github.io/f2e-exam/stockfeel/
 #### 功能需求
 這份專案需要你將商品資料顯示成表格，並且實作排序、篩選等功能。
-
-## 
 
 ## 紅鬍子 (Redso) 前端面試前測驗
 https://tzuchienkao.github.io/f2e-exam/redso/
