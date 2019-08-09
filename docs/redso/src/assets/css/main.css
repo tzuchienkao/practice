@@ -40,7 +40,7 @@ section,
 #landing article::before {
     width: 60px;
     height: 60px;
-    background: url('../images/me.svg') no-repeat 0 0;
+    background: url('/images/me.svg') no-repeat 0 0;
     background-size: contain;
     margin: 0 auto;
     content: '';
@@ -172,7 +172,7 @@ section,
     min-height: 20px;
     max-width: 40px;
     max-height: 40px;
-    background: url('../images/me.svg') no-repeat center center;
+    background: url('/images/me.svg') no-repeat center center;
     content: '';
     display: block;
 }
@@ -191,7 +191,7 @@ section,
 .shopCard .shopInfo h6::before {
     width: 15px;
     height: 15px;
-    background: url('../images/store.svg') no-repeat center center;
+    background: url('/images/store.svg') no-repeat center center;
     background-size: contain;
     margin-right: 3px;
     content: '';
