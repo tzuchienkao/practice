@@ -1,31 +1,27 @@
 <template>
   <section id="sortTable">
-    <table>
-      <tbody>
-        <tr>
-          <td v-for="(title, index) in tableTitle" :key="index">
-            {{ title }}
-          </td>
-        </tr>
-        <tr v-for="data in newAllData" :key="data.id">
-          <td>
-            {{ data.id }}
-          </td>
-          <td>
-            {{ data.name }}
-          </td>
-          <td>
-            {{ data.reward }}
-          </td>
-          <td>
-            {{ data.specialStockText }}
-          </td>
-          <td>
-            {{ data.closePrice }}
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <ul class="table tableHead">
+      <li v-for="(title, index) in tableTitle" :key="index">
+        {{ title }}
+      </li>
+    </ul>
+    <ul class="table tableBox" v-for="data in newAllData" :key="data.id">
+      <li>
+        {{ data.id }}
+      </li>
+      <li>
+        {{ data.name }}
+      </li>
+      <li>
+        {{ data.reward }}
+      </li>
+      <li>
+        {{ data.specialStockText }}
+      </li>
+      <li>
+        {{ data.closePrice }}
+      </li>
+    </ul>
   </section>
 </template>
 
@@ -104,7 +100,45 @@ export default {
 </script>
 
 <style scoped>
-#sortTable td {
-
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.table {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.tableBox {
+  line-height: 2;
+}
+.table li {
+  flex: 0 0 15%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.table li:nth-child(2) {
+  flex: auto;
+}
+.table li:nth-child(3), .table li:nth-child(5) {
+  text-align: right;;
+}
+@media (max-width: 1023px) and (min-width: 667px) {
+  .table li:not(:first-child) {
+    flex: 0 0 18%;
+  }
+}
+@media (max-width: 666px) and (min-width: 320px) {
+  .table {
+    line-height: 1.5;
+    padding: 10px 0;
+  }
+  .table li:first-child {
+    flex: auto;
+  }
+  .table li:not(:first-child) {
+    flex: 0 0 23%;
+  }
 }
 </style>
