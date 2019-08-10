@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body {color:#000;text-align: center;}
+		div {width:102px;border:1px solid #eee;border-bottom:0;margin:0 auto;overflow:hidden;}
+		ul {width:50px;list-style:none;padding:0;margin:0;float:left;}
+		ul:first-child {border-right-width:1px;border-right-style:solid;border-right-color:#eee;}
+		li {width:50px;height:50px;border-bottom:1px solid #eee;}
+	</style>
+</head>
+<body>
+	<div>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<ul>
+		<li>a</li>
+		<li>b</li>
+		<li>c</li>
+		<li>d</li>
+		<li>e</li>
+	</ul>
+
+	</div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+	$('ul:last-child >li:odd').each(function(){
+		var _index = $(this).index();
+		var _num = _index + 1;
+		$(this).html(_num);
+	});
+
+
+aa=["a","b","c","d","e"];
+var _length = aa.length;
+for(var i=0; i<_length; i++) {
+	$('body').append('<p>'+aa[i]+'</p>');
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>
+$(function(){
+$(".menu_text").hover(function (){
+	$en_menu=$(this).parent().attr("title"); 
+    $(this).text($en_menu);
+	$(this).css("color","#fff");
+	$(this).css("background-color","#000");
+	},function(){
+	$ch_menu=$(this).parent().attr("rel");
+    $(this).text($ch_menu);
+	$(this).css("color","#999");
+	$(this).css("background-color","#fff");
+	});
+});
+</script>
+<style>
+a { text-decoration:none; }
+ul a { color:#999; background:#fff; }
+</style>
+
+<title>中轉英</title>
+</head>
+
+<body>
+<div>
+<ul class="creep3_submenu">
+<a href="show_case.php?c_id=5" title="空間設計" rel="Interior Design"><span class="menu_text" >Interior Design</span></a>
+</ul>
+<ul class="creep3_submenu">
+<a href="show_case.php?c_id=6" title="平面設計" rel="Graphic Design"><span class="menu_text" >Graphic Design</span></a>
+</ul>
+<ul class="creep3_submenu">
+<a href="show_case.php?c_id=7" title="網頁設計" rel="Web Design"><span class="menu_text" >Web Design</span></a>
+</ul>
+<ul class="creep3_submenu">
+<a href="show_case.php?c_id=39" title="產品設計" rel="Product Design"><span class="menu_text" >Product Design</span></a>
+</ul>
+<ul class="creep3_submenu">
+<a href="show_case.php?c_id=29" title="牆面設計" rel="Wall Design"><span class="menu_text" >Wall Design</span></a>
+</ul>
+<ul class="creep3_submenu">
+<a href="show_case.php?c_id=30" title="櫥窗設計" rel="Display Design"><span class="menu_text" >Display Design</span></a>
+</ul>
+<ul class="creep3_submenu">
+<a href="show_case.php?c_id=31" title="書籍設計" rel="Book Design"><span class="menu_text" >Book Design</span></a>
+</ul>
+<ul class="creep3_submenu">
+<a href="show_case.php?c_id=32" title="裝置藝術" rel="Installation Art"><span class="menu_text" >Installation Art</span></a>
+</ul>
+<ul class="creep3_submenu">
+<a href="show_case.php?c_id=33" title="展場設計" rel="Exhibition"><span class="menu_text" >Exhibition</span></a>
+</ul>
+</div></body>
+</html>

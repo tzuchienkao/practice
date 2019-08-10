@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	img {width:100%;}
+		a {display:block;}
+		body, ul, li {line-height:0;list-style:none;padding:0;margin:0;}
+		ul {width:300px;height:300px;position:relative;overflow:hidden;display:inline-block;}
+		li:before, li:after, a:before, a:after {background:red;content:'';display:block;position:absolute;transition:all 0.3s ease;}
+		li:before, li:after {width:0;height:2px;}
+		a:before, a:after {width:2px;height:0;}
+		li:before, a:before {top:0;right:0;}
+		li:after, a:after {left:0;bottom:0;}
+		li:hover:before, li:hover:after, a:hover:before, a:hover:after {transition:all 0.3s ease;}
+		li:hover:before, li:hover:after {width:calc(100% + 2px);}
+		a:hover:before, a:hover:after {height:calc(100% + 2px);}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>
+			<a href="javascript:voi(0)">
+				<img src="http://wearehandsome.com/wp-content/uploads/2012/06/new-3-640x640.jpeg" alt="">
+			</a>
+		</li>
+	</ul>
+</body>
+</html>

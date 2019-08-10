@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>div類table</title>
+<style type="text/css">
+#css_table {
+	display: table;
+	width: 100%;
+}
+.css_tr {
+	display: table-row;
+	margin: 5px;
+	background-color: #f2f2f2;
+}
+.css_td {
+	display: table-cell;
+	width: 33%;
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 5px;
+}
+#ul-table {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 328px;
+}
+#ul-table li.row {
+	clear: both;
+}
+#ul-table li.row div.cell {
+	float: left;
+	width: 80px;
+	height: 40px;
+	border: 1px solid #000;
+	text-align: center;
+}
+#ul-table li.row-cross-col {
+	clear: both;
+}
+#ul-table li.row-cross-col div.cell {
+	float: left;
+	width: 80px;
+	height: 50px;
+	border: 1px solid #000;
+	text-align: center;
+	overflow: none;
+	display: block;
+}
+#ul-table li.row-cross-col div:first-child {
+	width: 162px;
+	height: 102px;
+	border-right:0;
+}
+</style>
+<link href="style_min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="480_min.css" media="only screen and (max-width : 480px)" rel="stylesheet" type="text/css">
+<link href="767_min.css" media="only screen and (min-width : 481px) and (max-width : 767px)" rel="stylesheet" type="text/css">
+<link href="979_min.css" media="only screen and (min-width : 768px) and (max-width : 979px)" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="css_table">
+	<div class="css_tr">
+		<div class="css_td">標題</div>
+		<div class="css_td">回應</div>
+		<div class="css_td">日期</div>
+	</div>
+	<div class="css_tr">
+		<div class="css_td">如何停用WordPress內建搜尋功能？</div>
+		<div class="css_td">5</div>
+		<div class="css_td">2011-10-30</div>
+	</div>
+</div>
+<ul id="ul-table">
+	<li class="row">
+		<div class="cell">1</div>
+		<div class="cell">2</div>
+		<div class="cell">3</div>
+		<div class="cell">4</div>
+	</li>
+	<li class="row-cross-col">
+		<div class="cell">1<br />
+			2<br />
+			3<br />
+			4<br />
+			5<br />
+		</div>
+		<div class="cell">1<br />
+			2</div>
+		<div class="cell">1<br />
+			2</div>
+		<div class="cell">1<br />
+			2</div>
+		<div class="cell">1<br />
+			2</div>
+	</li>
+	<li class="row">
+		<div class="cell">1</div>
+		<div class="cell">2</div>
+		<div class="cell">3</div>
+		<div class="cell">4</div>
+	</li>
+</ul>
+</body>
+</html>

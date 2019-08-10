@@ -25,3 +25,9 @@ https://tzuchienkao.github.io/f2e-exam/stockfeel/
 https://tzuchienkao.github.io/f2e-exam/redso/
 #### 功能需求
 使用Google地圖插件在網頁上搜索附近的餐館。
+
+## 點點網絡 (ddlife) 前端面試上機測驗
+https://tzuchienkao.github.io/f2e-exam/ddlife/
+#### 功能需求
+將偶數格的英文字母轉換成數字。
+
