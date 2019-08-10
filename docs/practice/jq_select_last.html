@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="oka lee">
+		<style type="text/css">
+			body{
+				padding: 0;
+				margin: 0;
+			}
+
+			div{
+				width: 100px;
+				height: 100px;
+				border: 1px solid #fff;
+				float: left;
+				background-color: #000;
+			}
+		</style>
+		<title>JQ取序數</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var _body_w = $(document).width(),
+					$div = $('div'),
+					_div_w = $div.outerWidth(),
+					i = Math.floor(_body_w / _div_w);
+
+					$('div:nth-child('+i+'N)').css({
+						'background-color':'blue'
+					});
+			});
+		</script>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+</html>
