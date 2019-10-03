@@ -1,6 +1,6 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-      ? '/vue-todo-list/'
+      ? '/f2e-exam/practice/vue_to_do_list/'
       : './',
       assetsDir:'static'
   }
