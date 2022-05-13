@@ -13,7 +13,13 @@
 ## 程式練習
 各類前端程式練習
 >
-2019-10更新
+2022-05更新
+
+## chatTalker AI 機器人
+https://tzuchienkao.github.io/f2e-exam/hexschool/chat_talker/
+#### 功能需求
+Lv1：做所有 RWD 頁面，畫面不可顯示 x 軸
+
 
 ## Vuejs ToDoList
 https://tzuchienkao.github.io/f2e-exam/practice/vue_to_do_list/
