@@ -1,0 +1,39 @@
+@import url(./variable.less);
+
+header {
+  height: 100vh;
+  background: url('../images/home@2x.png') center right 10% no-repeat, url('../images/bg_yellow.svg') top right no-repeat;
+  background-size: 39% auto, 62% auto;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    display: block;
+    height: 2.928vw;
+    max-height: 40px;
+    min-height: 24px;
+  }
+}
+.banner {
+  font-size: 20px;
+  line-height: 29px;
+  display: inline-flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  .description {
+    align-self: center;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 70px;
+    margin: 8px auto 16px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
