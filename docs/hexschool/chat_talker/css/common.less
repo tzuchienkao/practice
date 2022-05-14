@@ -66,3 +66,27 @@ a {
   display: inline-block;
   overflow: hidden;
 }
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  li a {
+    width: 10px;
+    height: 10px;
+    background-color: @border-color;
+    transition: background 0.8s;
+    &:hover {
+      background-color: @yellow;
+    }
+    &.current {
+      width: 16px;
+      background-color: @yellow;
+    }
+  }
+}
+footer {
+  font-size: 16px;
+  line-height: 24px;
+  background-color: @lighter;
+  padding: 16px 0;
+}

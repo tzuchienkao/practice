@@ -104,10 +104,22 @@ nav {
     }
   }
   &:last-child {
+    padding: 0;
+    margin-bottom: 60px;
     .list {
-      margin: 32px 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      padding: 0 20px 24px;
+      margin: 0 0;
+      > li {
+        width: 100%;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
     }
-    .icon {
+    .avatar {
       margin-left: 16px;
     }
     .card {
@@ -125,5 +137,21 @@ nav {
         }
       }
     }
+  }
+}
+.section-end {
+  min-height: 461px;
+  height: 69vh;
+  background: url('../images/m_bg@2x.png') top center no-repeat, url('../images/re-bg@2x.png') top center repeat-x;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  h2 {
+    font-size: 24px;
+    line-height: 35px;
+    margin-top: 42%;
   }
 }

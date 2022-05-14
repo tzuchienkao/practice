@@ -127,11 +127,12 @@ nav {
     }
   }
   &:last-child {
+    margin-bottom: 100px;
     .list {
       gap: 16px;
-      margin-top: 48px;
+      margin-bottom: 0;
     }
-    .icon {
+    .avatar {
       margin-left: 32px;
     }
     .card {
@@ -149,5 +150,24 @@ nav {
         }
       }
     }
+    .carousel {
+      margin-top: 24px;
+    }
+  }
+}
+.section-end {
+  min-height: 503px;
+  height: 65vh;
+  background: url('../images/bg@2x.png') top center repeat-x;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  h2 {
+    font-size: 32px;
+    line-height: 46px;
+    margin-top: 12%;
   }
 }
