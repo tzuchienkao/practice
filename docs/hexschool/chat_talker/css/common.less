@@ -4,6 +4,7 @@
 }
 body {
   color: @deep-dark;
+  background: url('../images/bg_circle_1.svg') top 76.692vh left -16.251vw no-repeat, url('../images/bg_circle_2.svg') top 220.572vh right -7.32vw no-repeat, url('../images/bg_circle_3.svg') top 312vh left 3.66vw no-repeat;
 }
 img {
   max-width: 100%;
@@ -46,6 +47,11 @@ a {
     border-radius: 99px;
   }
 }
+.top {
+  position: fixed;
+  right: 48px;
+  bottom: 24px;
+}
 .stars {
   display: inline-flex;
   gap: 8px;
@@ -62,7 +68,32 @@ a {
 .card {
   font-size: 16px;
   line-height: 24px;
+  background-color: @white;
   border-radius: 12px;
   display: inline-block;
   overflow: hidden;
+}
+.carousel {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  li a {
+    width: 10px;
+    height: 10px;
+    background-color: @border-color;
+    transition: background 0.8s;
+    &:hover {
+      background-color: @yellow;
+    }
+    &.current {
+      width: 16px;
+      background-color: @yellow;
+    }
+  }
+}
+footer {
+  font-size: 16px;
+  line-height: 24px;
+  background-color: @lighter;
+  padding: 16px 0;
 }

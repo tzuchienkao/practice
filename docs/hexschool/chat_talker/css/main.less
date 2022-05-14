@@ -1,13 +1,19 @@
 @import url(./variable.less);
 
+.container {
+  width: 80%;
+  margin: auto;;
+}
+
 header {
   height: 100vh;
   background: url('../images/home@2x.png') center right 10% no-repeat, url('../images/bg_yellow.svg') top right no-repeat;
-  background-size: 39% auto, 62% auto;
+  background-size: auto 69vh, auto 100vh;
   display: flex;
   flex-direction: column;
 }
 nav {
+  &:extend(.container);
   padding: 24px 0;
   display: flex;
   justify-content: space-between;
@@ -19,6 +25,7 @@ nav {
   }
 }
 .banner {
+  &:extend(.container);
   font-size: 20px;
   line-height: 29px;
   display: inline-flex;
@@ -38,6 +45,7 @@ nav {
   }
 }
 .wrapper {
+  &:extend(.container);
   margin-top: 100px;
   h2 {
     font-size: 32px;
@@ -68,7 +76,8 @@ nav {
   &:nth-child(3) {
     .list {
       margin: 48px 0;
-      display: inline-flex;
+      display: flex;
+      justify-content: space-between;
       gap: 16px;
     }
     .card {
@@ -90,11 +99,17 @@ nav {
     line-height: 26px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    .introduce {
+      flex: 0 0 40%;
+    }
     .list {
+      margin: 0;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      column-gap: 47px;
+      row-gap: 28px;
     }
     .card {
       max-width: 230px;
@@ -112,12 +127,15 @@ nav {
     }
   }
   &:last-child {
+    margin-bottom: 100px;
     .list {
       gap: 16px;
-      margin-top: 48px;
+      margin-bottom: 0;
     }
-    .icon {
+    .avatar {
       margin-left: 32px;
+      position: relative;
+      z-index: 1;
     }
     .card {
       padding: 48px 32px 24px;
@@ -134,5 +152,24 @@ nav {
         }
       }
     }
+    .carousel {
+      margin-top: 24px;
+    }
+  }
+}
+.section-end {
+  min-height: 503px;
+  height: 65vh;
+  background: url('../images/bg@2x.png') top center repeat-x;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  h2 {
+    font-size: 32px;
+    line-height: 46px;
+    margin-top: 12%;
   }
 }

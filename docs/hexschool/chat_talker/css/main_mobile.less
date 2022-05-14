@@ -1,15 +1,21 @@
 @import url(./variable.less);
 
+body {
+  background-position: top 111.394vh left -20.533vw, top 459.82vh right -12.533vw, top 723.688vh left -20.266vw;
+  background-size: 126px auto, 135px auto, 153px auto;
+}
+
 header {
   height: 100vh;
-  background: url('../images/home.png') bottom 5% right 2% no-repeat, url('../images/m_bg_yellow.svg') bottom 4% right no-repeat;
+  background: url('../images/home.png') bottom 5% right 7% no-repeat, url('../images/m_bg_yellow.svg') bottom 4% right 5% no-repeat;
   background-size: auto 45%, auto;
 }
 nav {
-  padding: 24px 20px;
+  padding: 20px 16px;
   border-bottom: 2px solid @yellow;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   .logo {
     display: block;
     height: 2.928vw;
@@ -21,6 +27,7 @@ nav {
 .banner {
   font-size: 16px;
   line-height: 24px;
+  padding: 0 20px;
   margin: 8.53% auto;
   h1 {
     font-size: 32px;
@@ -29,6 +36,7 @@ nav {
   }
 }
 .wrapper {
+  padding: 0 20px;
   margin-top: 60px;
   h2 {
     font-size: 28px;
@@ -101,11 +109,25 @@ nav {
     }
   }
   &:last-child {
+    padding: 0;
+    margin-bottom: 60px;
     .list {
-      margin: 32px 0;
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      padding: 0 20px 24px;
+      margin: 0 0;
+      > li {
+        width: 100%;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
     }
-    .icon {
+    .avatar {
       margin-left: 16px;
+      position: relative;
+      z-index: 1;
     }
     .card {
       padding: 48px 16px 16px;
@@ -122,5 +144,21 @@ nav {
         }
       }
     }
+  }
+}
+.section-end {
+  min-height: 461px;
+  height: 69vh;
+  background: url('../images/m_bg@2x.png') top center no-repeat, url('../images/re-bg@2x.png') top center repeat-x;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  h2 {
+    font-size: 24px;
+    line-height: 35px;
+    margin-top: 42%;
   }
 }
