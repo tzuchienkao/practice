@@ -5,6 +5,10 @@
 body {
   color: @deep-dark;
   background: url('../images/bg_circle_1.svg') top 76.692vh left -16.251vw no-repeat, url('../images/bg_circle_2.svg') top 220.572vh right -7.32vw no-repeat, url('../images/bg_circle_3.svg') top 312vh left 3.66vw no-repeat;
+  &.charge {
+    background: url('../images/bg_circle_3.svg') top 114.062vh left -19.546vw no-repeat;
+    background-size: 26.427vw auto;
+  }
 }
 img {
   max-width: 100%;
@@ -46,6 +50,42 @@ a {
   &.round {
     border-radius: 99px;
   }
+  &.minus {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    &::before {
+      background-color: @primary;
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 2px;
+    }
+  }
+  &.plus {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::before,
+    &::after {
+      background-color: @primary;
+      content: '';
+      display: inline-block;
+    }
+    &::before {
+      width: 16px;
+      height: 2px;
+      position: absolute;
+    }
+    &::after {
+      width: 2px;
+      height: 16px;
+    }
+  }
 }
 .top {
   position: fixed;
@@ -70,7 +110,7 @@ a {
   line-height: 24px;
   background-color: @white;
   border-radius: 12px;
-  display: inline-block;
+  // display: inline-block;
   overflow: hidden;
 }
 .carousel {
