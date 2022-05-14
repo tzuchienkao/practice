@@ -1,4 +1,7 @@
 @import url(./variable.less);
+* {
+  box-sizing: border-box;
+}
 body {
   color: @deep-dark;
 }
@@ -9,11 +12,17 @@ a {
   text-decoration: none;
 }
 .text {
+  &-center {
+    text-align: center;
+  }
   &-bold {
     font-weight: bold;
   }
   &-primary {
     color: @primary;
+  }
+  &-dark {
+    color: @dark;
   }
 }
 .button {
@@ -22,7 +31,38 @@ a {
   line-height: 24px;
   padding: 8px 32px;
   border-radius: 32px;
+  display: inline-block;
   &.accent {
     background-color: @accent;
   }
+  &.primary {
+    background-color: @primary;
+  }
+}
+.icon {
+  display: inline-block;
+  overflow: hidden;
+  &.round {
+    border-radius: 99px;
+  }
+}
+.stars {
+  display: inline-flex;
+  gap: 8px;
+  .star {
+    &:after {
+      color: @yellow-dark;
+      content: '★';
+    }
+  }
+}
+.box-shadow {
+  box-shadow: @box-shadow rgba(@black, 0.14);
+}
+.card {
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 12px;
+  display: inline-block;
+  overflow: hidden;
 }
