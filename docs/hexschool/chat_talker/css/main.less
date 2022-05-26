@@ -86,6 +86,8 @@ nav {
     margin-bottom: 100px;
     .avatar {
       margin-left: 32px;
+      position: relative;
+      z-index: 1;
     }
     .card {
       padding: 48px 32px 24px;
@@ -221,8 +223,6 @@ nav {
       }
       .avatar {
         margin-left: 16px;
-        position: relative;
-        z-index: 1;
       }
       .card {
         padding: 48px 16px 16px;
@@ -318,6 +318,9 @@ nav {
       .list {
         gap: 16px;
         margin-bottom: 0;
+        > li {
+          display: grid;
+        }
       }
       .carousel {
         margin-top: 24px;
