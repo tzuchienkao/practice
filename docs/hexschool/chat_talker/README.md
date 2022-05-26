@@ -71,7 +71,7 @@ RWD 的部分從行動裝置下手，切分各個區塊後再與桌機版對照�
   ![mobile](/docs/hexschool/chat_talker/assets/m-header.png)
   ![desktop](/docs/hexschool/chat_talker/assets/header.png)
 
-從圖檔看到有一個滿版破格的黃色圖塊設計，從設計稿畫布得知該圖塊與可視視窗等高，為了達到這樣的需求，我將 navbar 及 banner 的部分包進 header 當中，並運用 css `background` 相關屬性與 vh 單位，達到不論在什麼版面中都能有滿版效果。
+從桌機版設計稿中看到有一個滿版破格的黃色圖塊設計，再從畫布設定得知該圖塊與可視視窗等高，為了達到這樣的需求，我將 navbar 及 banner 的部分包進 header 當中，並運用 css `background` 相關屬性與 vh 單位，達到不論在什麼版面中都能有滿版效果。
   
 ## 為什麼選擇 Lv1 實作？
   
