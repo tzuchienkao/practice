@@ -1,16 +1,26 @@
-@import url(./variable.less);
 
 * {
   box-sizing: border-box;
 }
 body {
-  @import url(./main.less);
   color: @deep-dark;
-  background: url('../images/bg_circle_1.svg') top 76.692vh left -16.251vw no-repeat, url('../images/bg_circle_2.svg') top 220.572vh right -7.32vw no-repeat, url('../images/bg_circle_3.svg') top 312vh left 3.66vw no-repeat;
+  &.home {
+    background: url('../images/bg_circle_1.svg') top 76.692vh left -16.251vw no-repeat, url('../images/bg_circle_2.svg') top 220.572vh right -7.32vw no-repeat, url('../images/bg_circle_3.svg') top 312vh left 3.66vw no-repeat;
+  }
   &.charge {
-    @import url(./charge.less);
     background: url('../images/bg_circle_3.svg') top 114.062vh left -19.546vw no-repeat;
     background-size: 26.427vw auto;
+  }
+}
+nav {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+    display: block;
+    height: 2.928vw;
+    max-height: 40px;
+    min-height: 24px;
   }
 }
 img {
@@ -113,7 +123,6 @@ a {
   line-height: 24px;
   background-color: @white;
   border-radius: 12px;
-  // display: inline-block;
   overflow: hidden;
 }
 .carousel {
@@ -139,4 +148,28 @@ footer {
   line-height: 24px;
   background-color: @lighter;
   padding: 16px 0;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    &.home {
+      background-position: top 111.394vh left -20.533vw, top 459.82vh right -12.533vw, top 723.688vh left -20.266vw;
+      background-size: 126px auto, 135px auto, 153px auto;
+    }
+    &.charge {
+      background-position: top 111.394vh left -20.533vw, top 459.82vh right -12.533vw, top 723.688vh left -20.266vw;
+      background-size: 126px auto, 135px auto, 153px auto;
+    }
+  }
+  nav {
+    padding: 20px 16px;
+    border-bottom: 2px solid @yellow;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav, .banner, .wrapper {
+    .container();
+  }
 }
